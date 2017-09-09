@@ -8,7 +8,6 @@ class App extends Component {
     return (
       <div className="app">
         <section className="app-header">
-          <h1>Trail Buddies</h1>
           <Card className="region" >
             <CardTitle className="region__title"
               title="Whistler"
