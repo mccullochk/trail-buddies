@@ -21,8 +21,8 @@ const Root = (props) => {
         <BrowserRouter>
           <div>
             <Route exact path='/' component={App} />
-            <Route path='/trail' component={Trail} />
-            <Route path='/buddy' component={Buddy} />
+            <Route exact path='/trail/:id' component={Trail} />
+            <Route exact path='/buddy/:id' component={Buddy} />
           </div>
         </BrowserRouter>
       </AppLayout>
