@@ -4,7 +4,9 @@
       "LAYOUT",
       "CARD",
       "INPUT",
-      "BUTTON"
+      "BUTTON",
+      "CHIP",
+      "AVATAR"
     ],
     "output": "src/assets/react-toolbox-themr"
   },
