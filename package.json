@@ -1,6 +1,7 @@
 {
   "reactToolbox": {
     "include": [
+      "LAYOUT",
       "CARD",
       "INPUT",
       "BUTTON"
