@@ -10,8 +10,8 @@ import './assets/react-toolbox-themr/theme.css'
 
 import AppLayout from './components/AppLayout'
 import App from './pages/App'
-import Buddies from './pages/Buddies'
-import Trail from './pages/Buddies'
+import Buddy from './pages/Buddy'
+import Trail from './pages/Trail'
 
 const Root = (props) => {
 
@@ -22,7 +22,7 @@ const Root = (props) => {
           <div>
             <Route exact path='/' component={App} />
             <Route path='/trail' component={Trail} />
-            <Route path='/buddy' component={Buddies} />
+            <Route path='/buddy' component={Buddy} />
           </div>
         </BrowserRouter>
       </AppLayout>
