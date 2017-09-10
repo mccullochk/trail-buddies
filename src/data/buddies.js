@@ -9,17 +9,17 @@ const buddies = [
     hikes: [
       {
         id: 1,
-        price: 10,
+        price: 50,
         offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!"
       },
       {
         id: 2,
-        price: 10,
+        price: 50,
         offer: "I bring a wealth of knowledge to this hike which you don't want to miss. Lunch will be provided to you on this hike so we can take our time and enjoy the beautiful scenery." 
       },
       {
         id: 3,
-        price: 10,
+        price: 50,
         offer: "This hike is not very well known. So if you want to experience a hidden gem, this is the hike for you!"
       }
     ], 
@@ -54,7 +54,7 @@ const buddies = [
     hikes: [
       {
         id: 1,
-        price: 12,
+        price: 60,
         offer: "I've lived in Kamloops my whole life so I know every trail in Kenna Cartwright which means we can find the right combination for you."
       } 
     ], 
@@ -77,7 +77,7 @@ const buddies = [
     hikes: [
       {
         id: 1,
-        price: 10,
+        price: 40,
         offer: "I know the ins and outs of all the Kamloops land. Come learn some of my knowledge!"
       } 
     ], 
@@ -100,7 +100,7 @@ const buddies = [
     hikes: [
       {
         id: 1,
-        price: 15,
+        price: 70,
         offer: "Come with me I'll show you a good time!"
       } 
     ], 
