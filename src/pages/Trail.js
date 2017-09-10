@@ -10,17 +10,6 @@ import {Link} from 'react-router-dom';
 import hikes from '../data/hikes.js'
 import buddies from '../data/buddies.js'
 
-import nic from "../imgs/Rise-41.jpg"
-import kenna from '../imgs/IMG_9841.jpg'
-const NicImage = {
-    src: nic,
-    alt: 'my image',
-}
-const Kenna = {
-    src: kenna,
-    alt: 'my image',
-}
-
 class Trail extends Component {
   componentWillMount() {
     this.setState({
@@ -40,7 +29,7 @@ class Trail extends Component {
           <Card className="contact__img">
             <CardMedia
               aspectRatio="square"
-              image={Kenna.src}
+              image={hike.image}
             />
           </Card>
           <Card className="contact__info">
