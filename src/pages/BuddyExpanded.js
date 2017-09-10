@@ -17,6 +17,10 @@ const image = {
 }
 
 class Buddies extends Component {
+  // Super ghetto way to make a hike booking, but this is an MVP after all...
+  setupButton() {
+    window.open('mailto:nriopel13@gmail.com?subject=Kenna Cartwright Hike&body=Hi Nick! I would like to book the Kenna Cartwright hike.');
+  }
   render() {
     return (
       <div className="buddy">
@@ -37,7 +41,7 @@ class Buddies extends Component {
                 <FontIcon>star</FontIcon>
                 <p>3 Reviews</p>
               </div>
-              <Button label="Book" raised primary className="book2"/>
+              <Button label="Book" raised primary className="book2" onClick={this.setupButton} />
             </div>
           </Card>
         </div>
