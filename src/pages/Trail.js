@@ -18,7 +18,7 @@ class Trail extends Component {
   }
 
   getObj(id, obj) {
-    return obj.id.toString() === id 
+    return obj.id.toString() === id
   }
 
   render() {
