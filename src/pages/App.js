@@ -4,6 +4,7 @@ import Card from 'react-toolbox/lib/card/Card'
 import CardMedia from 'react-toolbox/lib/card/CardMedia'
 import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon';
+import { Link } from 'react-router-dom'
 
 import hikes from '../data/hikes.js'
 
@@ -23,22 +24,24 @@ class App extends Component {
       <div className="app">
         {hikes.map((hike) => {
           return (
-        <div className="contact">
-          <Card className="contact__img">
-            <CardMedia
-              aspectRatio="square"
-              image={hike.image}
-            />
-          </Card>
-          <Card className="contact__info">
-            <div className="contact__info--body">
-              <h2>{hike.name}</h2>
-              <p><b><FontIcon>wb_sunny</FontIcon></b> {hike.duration} minute hike</p>
-              <p><b><FontIcon>directions_walk</FontIcon></b> {hike.level} level</p>
-              <p><b><FontIcon>tag_faces</FontIcon></b> Coolness {hike.coolness}/10</p>
+            <Link to={`/trail/${hike.id}`}>
+            <div className="contact">
+              <Card className="contact__img">
+                <CardMedia
+                  aspectRatio="square"
+                  image={hike.image}
+                />
+              </Card>
+              <Card className="contact__info">
+                <div className="contact__info--body">
+                  <h2>{hike.name}</h2>
+                  <p><b><FontIcon>wb_sunny</FontIcon></b> {hike.duration} minute hike</p>
+                  <p><b><FontIcon>directions_walk</FontIcon></b> {hike.level} level</p>
+                  <p><b><FontIcon>tag_faces</FontIcon></b> Coolness {hike.coolness}/10</p>
+                </div> 
+              </Card>
             </div>
-          </Card>
-        </div>
+          </Link>
           )})}
       </div>
 

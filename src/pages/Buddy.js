@@ -17,7 +17,7 @@ class Buddies extends Component {
   componentWillMount() {
     this.setState({
       id: this.props.match.params.id,
-      hike: this.props.location.search.slice(-1) 
+      hike: this.props.location.search.slice(-1) || '1'
     })
   }
 
