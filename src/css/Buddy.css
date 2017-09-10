@@ -26,8 +26,20 @@
 .contact__info--body .book {
   margin-left: 20px;
 }
-.description {
+.contact__info--body .book2 {
+  margin-top: 16px;
+  margin-left: 20px;
+}
+.more {
+  text-align: center;
   margin-bottom: 20px;
+}
+.person {
+  margin-bottom: 20px;
+}
+.description h2 {
+  margin: 0;
+  padding: 16px 0 0 16px;
 }
 .reviews {
   display: flex;

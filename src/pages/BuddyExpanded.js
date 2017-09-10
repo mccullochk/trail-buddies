@@ -31,8 +31,7 @@ class Buddies extends Component {
                 <FontIcon>star</FontIcon>
                 <p>3 Reviews</p>
               </div>
-              <p><b>$25.00</b> per person</p>
-              <Button label="Book" raised primary className="book"/>
+              <Button label="Book" raised primary className="book2"/>
             </div>
           </Card>
         </div>
@@ -40,62 +39,29 @@ class Buddies extends Component {
           <CardText>
             <b>Who I am: </b>I have lived in Kamloops my whole life and am therefore intimately familiar with all the best place in Kamloops and the surround area. My degree in history allows me to be able to share a vaste amount of information with all my hiking companions.
           </CardText>
+        </Card> 
+        <Card className="description">
+          <Link to='/trail/1'>
+            <h2>Kenna Cartwright</h2>
+          </Link>
+          <Link to='/buddy/1'>
+            <CardText>
+              <b>What I offer: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
+            </CardText>
+          </Link>
         </Card>
         <Card className="description">
-          <h2>Kenna Cartwright</h2>
+          <h2>Cinnamon Ridge</h2>
           <CardText>
             <b>What I offer: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
           </CardText>
         </Card>
-        <Card className="more">
-          <Link to='/buddy/expanded/1'>
-            <Button>Other hikes</Button>
-          </Link>
+        <Card className="description">
+          <h2>Lonepine valley</h2>
+          <CardText>
+            <b>What I offer: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
+          </CardText>
         </Card>
-        <div className="reviews">
-          <Card className="review__card">
-            <CardTitle
-              className="review__card--title"
-              avatar="https://www.journeybeyondtravel.com/wp-content/uploads/2017/07/Lucas-Peters-Headshot-Banasa-SMALL-300x288.jpg"
-              title="Billy"
-            />
-            <CardText>"Really knowledgable guide"</CardText>
-            <div className="stars">
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-            </div>
-          </Card>
-          <Card className="review__card">
-            <CardTitle
-              className="review__card--title"
-              avatar="https://andrewskurka.korndev-cdn.com/wp-content/uploads/about-skurka-headshot.jpg"
-              title="Jordan"
-            />
-            <CardText>"Beautiful hike"</CardText>
-            <div className="stars">
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-            </div>
-          </Card>
-          <Card className="review__card">
-            <CardTitle
-              className="review__card--title"
-              avatar="http://wpmedia.theprovince.com/2011/12/davis_headshot1.jpg?quality=60&strip=all"
-              title="April"
-            />
-            <CardText>"So so.."</CardText>
-            <div className="stars">
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-              <FontIcon>star</FontIcon>
-            </div>
-          </Card>
-        </div>
       </div>
     )
   }

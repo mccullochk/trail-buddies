@@ -11,6 +11,7 @@ import './assets/react-toolbox-themr/theme.css'
 import AppLayout from './components/AppLayout'
 import App from './pages/App'
 import Buddy from './pages/Buddy'
+import BuddyExpanded from './pages/BuddyExpanded'
 import Trail from './pages/Trail'
 
 const Root = (props) => {
@@ -23,6 +24,7 @@ const Root = (props) => {
             <Route exact path='/' component={App} />
             <Route exact path='/trail/:id' component={Trail} />
             <Route exact path='/buddy/:id' component={Buddy} />
+            <Route exact path='/buddy/expanded/:id' component={BuddyExpanded} />
           </div>
         </BrowserRouter>
       </AppLayout>
