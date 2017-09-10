@@ -60,7 +60,7 @@ class Buddies extends Component {
         {buddy.hikes.map((hike) => {
           const hikeOffer = hikes.find(this.getObj.bind(this, hike.id.toString()))
           return (
-            <Card className="description">
+            <Card className="description1">
               <h2>{hikeOffer.name}</h2>
               <CardText>
                 <b>What I offer: </b>{hike.offer}

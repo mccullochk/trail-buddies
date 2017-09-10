@@ -63,7 +63,7 @@ class Buddies extends Component {
             <b>Who I am: </b>{buddy.description}
           </CardText>
         </Card>
-        <Card className="description">
+        <Card className="description1">
           <h2>{hike.name}</h2>
           <CardText>
             <b>What I offer: </b>{buddyHike.offer}
