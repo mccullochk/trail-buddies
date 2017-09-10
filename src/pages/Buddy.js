@@ -26,15 +26,15 @@ class Buddies extends Component {
   }
 
   // Super ghetto way to make a hike booking, but this is an MVP after all...
-  setupButton() {
-    window.open('mailto:nriopel13@gmail.com?subject=Kenna Cartwright Hike&body=Hi Nick! I would like to book the Kenna Cartwright hike.');
+  setupButton(hike) {
+    console.log(hike);
+    window.open(`mailto:nriopel13@gmail.com?subject=${hike.name} Hike&body=Hi Nick! I would like to book the ${hike.name} hike.`);
   }
 
   render() {
     const buddy = buddies.find(this.getObj.bind(this, this.state.id))
     const hike = hikes.find(this.getObj.bind(this, this.state.hike))
     const buddyHike = buddy.hikes.find(this.getObj.bind(this, this.state.hike))
-   console.log(buddyHike) 
     return (
       <div className="buddy">
         <div className="contact">
@@ -54,7 +54,7 @@ class Buddies extends Component {
                 <p>{buddy.reviews.length} reviews</p>
               </div>
               <p><b>${buddyHike.price}</b> per person</p>
-              <Button label="Book" raised primary className="book" onClick={this.setupButton} />
+              <Button label="Book" raised primary className="book" onClick={this.setupButton.bind(this, hike)} />
             </div>
           </Card>
         </div>
