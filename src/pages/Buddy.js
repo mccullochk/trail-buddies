@@ -10,6 +10,12 @@ import { Link } from 'react-router-dom'
 
 import '../css/Buddy.css'
 
+import NicImage from "../imgs/Rise-41.jpg"
+const image = {
+    src: NicImage,
+    alt: 'my image',
+}
+
 class Buddies extends Component {
   render() {
     return (
@@ -18,12 +24,12 @@ class Buddies extends Component {
           <Card className="contact__img">
             <CardMedia 
               aspectRatio="square"
-              image="http://www.mysteryranch.com/Landing%20Pages/ambassadors/headshot-inge-perkins.jpg"
+              image={image.src}
             />
           </Card>
           <Card className="contact__info">
             <div className="contact__info--body">
-              <h2>Tracy Willow</h2>
+              <h2>Nick Riopel</h2>
               <div className="reviews">
                 <FontIcon>star</FontIcon>
                 <FontIcon>star</FontIcon>
@@ -31,20 +37,20 @@ class Buddies extends Component {
                 <FontIcon>star</FontIcon>
                 <p>3 Reviews</p>
               </div>
-              <p><b>$25.00</b> per person</p>
+              <p><b>$10.00</b> per person</p>
               <Button label="Book" raised primary className="book"/>
             </div>
           </Card>
         </div>
         <Card className="person">
           <CardText>
-            <b>Who I am: </b>I have lived in Kamloops my whole life and am therefore intimately familiar with all the best place in Kamloops and the surround area. My degree in history allows me to be able to share a vaste amount of information with all my hiking companions.
+            <b>Who I am: </b>I am a 24 years old students completing his degree in Adventure Tourism here at TRU. I have been guiding as a sea kayak guide over the last 5 summers. Interpretation and good laugh are my specialties. I will show you around the Kamloops area while you keep stress off your mind.
           </CardText>
         </Card>
         <Card className="description">
           <h2>Kenna Cartwright</h2>
           <CardText>
-            <b>What I offer: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
+            <b>What I offer: </b>This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!
           </CardText>
         </Card>
         <Card className="more">

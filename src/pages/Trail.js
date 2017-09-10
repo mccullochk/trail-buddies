@@ -7,6 +7,12 @@ import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon';
 import {Link} from 'react-router-dom';
 
+import nic from "../imgs/Rise-41.jpg"
+const NicImage = {
+    src: nic,
+    alt: 'my image',
+}
+
 class Trail extends Component {
   render() {
     return (
@@ -37,11 +43,11 @@ class Trail extends Component {
           <Card className="buddies__cards">
             <CardTitle
               className="buddies_cards--title"
-              avatar="http://www.mysteryranch.com/Landing%20Pages/ambassadors/headshot-inge-perkins.jpg"
-              title="Tracy Willow"
+              avatar={NicImage.src}
+              title="Nick Riopel"
               subtitle="Perilous Pathfinder" />
             <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
             </div>
           </Card>
           </Link>
