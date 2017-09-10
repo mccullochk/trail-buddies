@@ -3,10 +3,14 @@ import Layout from 'react-toolbox/lib/layout/Layout'
 import Panel from 'react-toolbox/lib/layout/Panel'
 import AppBar from 'react-toolbox/lib/app_bar/AppBar'
 
+const TrailBuddiesIcon = () => (
+  <img src="" alt="Trail Buddies" />
+);
+
 const AppLayout = (props) => (
   <Layout>
     <Panel>
-      <AppBar className="layout header" title="Trail Buddies" />
+      <AppBar className="layout header" leftIcon={<TrailBuddiesIcon />} />
       <div className="layout main">
         {props.children}
       </div>
