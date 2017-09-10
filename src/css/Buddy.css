@@ -1,0 +1,64 @@
+.contact {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.contact .contact__img {
+  height: 150px;
+  width: calc((100%-20px)*0.5);
+}
+.contact .contact__info {
+  height: 150px;
+  width: calc((100%-20px)*0.5);
+}
+.contact__info--body {
+  margin-left: 10px;
+}
+.contact__info--body .reviews p {
+  margin-top: 5px;
+  margin-left: 5px;
+  font-size: 10px;
+}
+.contact__info--body .reviews span {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.contact__info--body .book {
+  margin-left: 20px;
+}
+.description {
+  margin-bottom: 20px;
+}
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+.reviews h4 {
+  margin-left: 10px;
+}
+.review__card {
+  width: 154px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.review__card--title div:last-child {
+  width: 50%;
+}
+.reviews .review__card p {
+  font-size: 12px;
+  line-height: 16px;
+}
+.reviews .review__card .stars {
+  margin-left: 16px;
+  margin-bottom: 10px;
+}
+.reviews .review__card .stars span {
+  font-size: 16px;
+}
+h2 {
+  margin: 10px 0 5px 0;
+}
+p {
+  margin: 0;
+  margin-bottom: 10px;
+}
