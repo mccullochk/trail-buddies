@@ -45,9 +45,10 @@ class Trail extends Component {
           <CardText>{hike.description}</CardText>
         </Card>
         <div className="buddies">
-        {buddies.map((buddy) => {
+        {hike.buddies.map((id) => {
+          const buddy = buddies.find(this.getObj.bind(this, id.toString()))
           return (
-          <Link to={`/buddy/${buddy.id}`}>
+          <Link to={`/buddy/${buddy.id}?hike=${this.state.id}`}>
             <Card className="buddies__cards">
               <CardTitle
                 className="buddies_cards--title"

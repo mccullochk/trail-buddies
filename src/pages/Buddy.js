@@ -17,7 +17,7 @@ class Buddies extends Component {
   componentWillMount() {
     this.setState({
       id: this.props.match.params.id,
-      hike: "1"
+      hike: this.props.location.search.slice(-1) 
     })
   }
 
@@ -34,7 +34,7 @@ class Buddies extends Component {
     const buddy = buddies.find(this.getObj.bind(this, this.state.id))
     const hike = hikes.find(this.getObj.bind(this, this.state.hike))
     const buddyHike = buddy.hikes.find(this.getObj.bind(this, this.state.hike))
-    
+   console.log(buddyHike) 
     return (
       <div className="buddy">
         <div className="contact">
@@ -64,7 +64,7 @@ class Buddies extends Component {
           </CardText>
         </Card>
         <Card className="description">
-          <h2>Kenna Cartwright</h2>
+          <h2>{hike.name}</h2>
           <CardText>
             <b>What I offer: </b>{buddyHike.offer}
           </CardText>

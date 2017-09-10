@@ -15,12 +15,12 @@ const buddies = [
       {
         id: 2,
         price: 10,
-        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!" 
+        offer: "I bring a wealth of knowledge to this hike which you don't want to miss. Lunch will be provided to you on this hike so we can take our time and enjoy the beautiful scenery." 
       },
       {
         id: 3,
         price: 10,
-        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!"
+        offer: "This hike is not very well known. So if you want to experience a hidden gem, this is the hike for you!"
       }
     ], 
     reviews: [
@@ -49,32 +49,46 @@ const buddies = [
     name: 'Inga Tranvik',
     motto: 'Bushwacker',
     rating: [1,1,1,1],
-    description: "Yo yo yo!",
+    description: "I'm a Kamloops local and hiking enthusiast.",
     img: 'http://www.thewanderguide.com/wp-content/uploads/2017/07/headshot.jpg',
     hikes: [
       {
         id: 1,
-        price: 10,
-        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!"
+        price: 12,
+        offer: "I've lived in Kamloops my whole life so I know every trail in Kenna Cartwright which means we can find the right combination for you."
       } 
     ], 
-    reviews: [ ]
+    reviews: [
+      {
+        name: "April",
+        statement: "Nice guide",
+        rating: [1,1,1,1],
+        img: "http://wpmedia.theprovince.com/2011/12/davis_headshot1.jpg?quality=60&strip=all"
+      }
+    ]
   },
   {
     id: 3,
     name: 'Justin Raker',
     motto: 'Survivalist',
     rating: [1,1,1,1],
-    description: "Yo yo yo!",
+    description: "I live off the land in a yurt in the hills of Kamloops.",
     img: 'http://eclipsemagazine.com/wp-content/uploads/2017/04/Ian-Hecox-headshot-photo-credit-Albert-L.-Ortega.jpg',
     hikes: [
       {
         id: 1,
         price: 10,
-        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!"
+        offer: "I know the ins and outs of all the Kamloops land. Come learn some of my knowledge!"
       } 
     ], 
-    reviews: [ ]
+    reviews: [
+      {
+        name: "April",
+        statement: "Nice guide",
+        rating: [1,1,1,1],
+        img: "http://wpmedia.theprovince.com/2011/12/davis_headshot1.jpg?quality=60&strip=all"
+      }
+    ] 
   },
   {
     id: 4,
@@ -86,11 +100,18 @@ const buddies = [
     hikes: [
       {
         id: 1,
-        price: 10,
-        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!"
+        price: 15,
+        offer: "Come with me I'll show you a good time!"
       } 
     ], 
-    reviews: [ ]
+    reviews: [
+      {
+        name: "April",
+        statement: "Did the job",
+        rating: [1,1,1],
+        img: "http://wpmedia.theprovince.com/2011/12/davis_headshot1.jpg?quality=60&strip=all"
+      }
+    ]
   }
 ]
 
