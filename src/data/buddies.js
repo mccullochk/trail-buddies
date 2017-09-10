@@ -4,13 +4,13 @@ const buddies = [
     name: 'Nick Riopel',
     motto: 'Perilous Pathfinder',
     rating: [1,1,1,1],
-    description: "I am a 24 years old students completing his degree in Adventure Tourism here at TRU. I have been guiding as a sea kayak guide over the last 5 summers. Interpretation and good laugh are my specialties. I will show you around the Kamloops area while you keep stress off your mind.",
+    description: "I am a 24 years old students completing my degree in Adventure Tourism here at TRU. I have been guiding as a sea kayak guide over the last 5 summers. Interpretation and good laugh are my specialties. I will show you around the Kamloops area while you keep stress off your mind.",
     img: "https://github.com/mccullochk/trail-buddies/blob/master/src/imgs/Rise-41.jpg?raw=true",
     hikes: [
       {
         id: 1,
         price: 50,
-        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $10 I will create an awesome experience for you. Join me!"
+        offer: "This is the best 1h30 hike you can do here in Kamloops. When reaching the top of the hike you will have a breathtaking view of Kamloops! For only $50 I will create an awesome experience for you. Join me!"
       },
       {
         id: 2,
