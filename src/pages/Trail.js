@@ -44,7 +44,7 @@ class Trail extends Component {
           </CardText>
         </Card>
         <div className="buddies">
-          <Link to={`/buddy/1234`} activeClassName="active">
+          <Link to={`/buddy/1234`} >
           <Card className="buddies__cards">
             <CardTitle
               className="buddies_cards--title"
