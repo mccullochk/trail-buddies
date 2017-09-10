@@ -18,12 +18,12 @@ class Buddies extends Component {
           <Card className="contact__img">
             <CardMedia 
               aspectRatio="square"
-              image="https://i.pinimg.com/736x/68/be/1a/68be1a805e9206e375554f1f01e3b305--mens-headshots-model-headshots.jpg"
+              image="http://www.mysteryranch.com/Landing%20Pages/ambassadors/headshot-inge-perkins.jpg"
             />
           </Card>
           <Card className="contact__info">
             <div className="contact__info--body">
-              <h2>Jack Savage</h2>
+              <h2>Tracy Willow</h2>
               <div className="reviews">
                 <FontIcon>star</FontIcon>
                 <FontIcon>star</FontIcon>
@@ -36,16 +36,22 @@ class Buddies extends Component {
             </div>
           </Card>
         </div>
-        <Card className="description">
+        <Card className="person">
           <CardText>
-            <b>Who I am: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
+            <b>Who I am: </b>I have lived in Kamloops my whole life and am therefore intimately familiar with all the best place in Kamloops and the surround area. My degree in history allows me to be able to share a vaste amount of information with all my hiking companions.
           </CardText>
         </Card>
         <Card className="description">
+          <h2>Kenna Cartwright</h2>
           <CardText>
             <b>What I offer: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
           </CardText>
-        </Card> 
+        </Card>
+        <Card className="more">
+          <Link to='/buddy/expanded/1'>
+            <Button>Other hikes</Button>
+          </Link>
+        </Card>
         <div className="reviews">
           <Card className="review__card">
             <CardTitle
