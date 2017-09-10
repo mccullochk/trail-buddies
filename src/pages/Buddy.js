@@ -6,7 +6,7 @@ import CardMedia from 'react-toolbox/lib/card/CardMedia'
 import CardText from 'react-toolbox/lib/card/CardText'
 import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon/FontIcon'
-import Avatar from 'react-toolbox/lib/avatar/Avatar'
+import { Link } from 'react-router-dom'
 
 import '../css/Buddy.css'
 
