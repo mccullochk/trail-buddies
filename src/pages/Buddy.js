@@ -27,7 +27,6 @@ class Buddies extends Component {
 
   // Super ghetto way to make a hike booking, but this is an MVP after all...
   setupButton(hike) {
-    console.log(hike);
     window.open(`mailto:nriopel13@gmail.com?subject=${hike.name} Hike&body=Hi Nick! I would like to book the ${hike.name} hike.`);
   }
 
