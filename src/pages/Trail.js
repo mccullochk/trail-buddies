@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
-import Button from 'react-toolbox/lib/button/Button'
 import Card from 'react-toolbox/lib/card/Card'
 import CardMedia from 'react-toolbox/lib/card/CardMedia'
 import CardText from 'react-toolbox/lib/card/CardText'
 import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon';
+import {Link} from 'react-router-dom';
 
 class Trail extends Component {
   render() {
@@ -33,16 +33,7 @@ class Trail extends Component {
           </CardText>
         </Card>
         <div className="buddies">
-          <Card className="buddies__cards">
-            <CardTitle
-              className="buddies_cards--title"
-              avatar="https://i.pinimg.com/736x/68/be/1a/68be1a805e9206e375554f1f01e3b305--mens-headshots-model-headshots.jpg"
-              title="Jack Savage"
-              subtitle="Adventurer Extroardinaire" />
-            <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
-            </div>
-          </Card>
+          <Link to={`/buddy/1234`} activeClassName="active">
           <Card className="buddies__cards">
             <CardTitle
               className="buddies_cards--title"
@@ -50,9 +41,10 @@ class Trail extends Component {
               title="Tracy Willow"
               subtitle="Perilous Pathfinder" />
             <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
             </div>
           </Card>
+          </Link>
           <Card className="buddies__cards">
             <CardTitle
               className="buddies_cards--title"
@@ -71,6 +63,16 @@ class Trail extends Component {
               subtitle="Survivalist" />
             <div className="buddies_cards--reviews">
               <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
+            </div>
+          </Card>
+          <Card className="buddies__cards">
+            <CardTitle
+              className="buddies_cards--title"
+              avatar="https://i.pinimg.com/736x/68/be/1a/68be1a805e9206e375554f1f01e3b305--mens-headshots-model-headshots.jpg"
+              title="Jack Savage"
+              subtitle="Adventurer Extroardinaire" />
+            <div className="buddies_cards--reviews">
+              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
             </div>
           </Card>
         </div>
@@ -132,8 +134,22 @@ class Trail extends Component {
           body div.buddies_cards--title div:last-child p {
             font-size: 10px !important;
           }
+          body div.buddies_cards--title div:last-child h5 {
+            color: black !important;
+          }
+          .buddies_cards span {
+            color: black !important;
+          }
+          .buddies a {
+            text-decoration: none !important;
+          }
+          .buddies_cards--reviews span  {
+            font-size: 16px;
+            color: black !important;
+          }
           .buddies_cards--reviews {
-            text-align: center;
+            margin-left: 15px;
+            margin-top: 7px;
           }
           div.buddies_cards--title {
             padding-bottom: 10px !important;
