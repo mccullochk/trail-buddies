@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Card from 'react-toolbox/lib/card/Card'
 import CardMedia from 'react-toolbox/lib/card/CardMedia'
-import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon';
 import { Link } from 'react-router-dom'
 

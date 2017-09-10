@@ -35,6 +35,7 @@ class Buddies extends Component {
     const buddy = buddies.find(this.getObj.bind(this, this.state.id))
     const hike = hikes.find(this.getObj.bind(this, this.state.hike))
     const buddyHike = buddy.hikes.find(this.getObj.bind(this, this.state.hike))
+
     return (
       <div className="buddy">
         <div className="contact">
@@ -97,7 +98,5 @@ class Buddies extends Component {
     )
   }
 }
-
-
 
 export default Buddies

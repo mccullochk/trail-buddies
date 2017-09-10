@@ -4,9 +4,7 @@ import Button from 'react-toolbox/lib/button/Button'
 import Card from 'react-toolbox/lib/card/Card'
 import CardMedia from 'react-toolbox/lib/card/CardMedia'
 import CardText from 'react-toolbox/lib/card/CardText'
-import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon/FontIcon'
-import { Link } from 'react-router-dom'
 
 import '../css/Buddy.css'
 
@@ -32,8 +30,6 @@ class Buddies extends Component {
 
   render() {
     const buddy = buddies.find(this.getObj.bind(this, this.state.id))
-    const hike = hikes.find(this.getObj.bind(this, this.state.hike))
-    const buddyHike = buddy.hikes.find(this.getObj.bind(this, this.state.hike))
     return (
       <div className="buddy">
         <div className="contact">
