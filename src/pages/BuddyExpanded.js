@@ -22,8 +22,6 @@ class Buddies extends Component {
   }
 
   getObj(id, obj) {
-    console.log(id, obj.id.toString())
-    console.log(obj.id.toString() === id)
     return obj.id.toString() === id 
   }
 
