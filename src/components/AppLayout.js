@@ -12,7 +12,7 @@ const TrailBuddiesIcon = () => (
 const AppLayout = (props) => (
   <Layout>
     <Panel>
-      <a href='/'><AppBar className="layout header" leftIcon={<TrailBuddiesIcon />} /></a>
+      <a href='/'><AppBar className="layout header" leftIcon={<TrailBuddiesIcon />} rightIcon="account_circle"/></a>
       <div className="layout main">
         {props.children}
       </div>
