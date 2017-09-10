@@ -25,6 +25,7 @@ const AppLayout = (props) => (
         width: 85%;
         min-width: 300px;
         margin: 0 auto;
+        margin-bottom: 20px;
       }
     `}</style>
   </Layout>
