@@ -8,8 +8,13 @@ import FontIcon from 'react-toolbox/lib/font_icon';
 import {Link} from 'react-router-dom';
 
 import nic from "../imgs/Rise-41.jpg"
+import kenna from '../imgs/IMG_9841.jpg'
 const NicImage = {
     src: nic,
+    alt: 'my image',
+}
+const Kenna = {
+    src: kenna,
     alt: 'my image',
 }
 
@@ -21,7 +26,7 @@ class Trail extends Component {
           <Card className="contact__img">
             <CardMedia
               aspectRatio="square"
-              image="http://s3.amazonaws.com/digitaltrends-uploads-prod/2016/05/Best-hiking-apps-053016.jpg"
+              image={Kenna.src}
             />
           </Card>
           <Card className="contact__info">
