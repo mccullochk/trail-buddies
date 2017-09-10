@@ -7,85 +7,62 @@ import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon';
 import {Link} from 'react-router-dom';
 
-import nic from "../imgs/Rise-41.jpg"
-import kenna from '../imgs/IMG_9841.jpg'
-const NicImage = {
-    src: nic,
-    alt: 'my image',
-}
-const Kenna = {
-    src: kenna,
-    alt: 'my image',
-}
+import hikes from '../data/hikes.js'
+import buddies from '../data/buddies.js'
 
 class Trail extends Component {
+  componentWillMount() {
+    this.setState({
+      id: this.props.match.params.id,
+    })
+  }
+
+  getObj(id, obj) {
+    return obj.id.toString() === id 
+  }
+
   render() {
+    const hike = hikes.find(this.getObj.bind(this, this.state.id))
     return (
       <div className="trail">
         <div className="contact">
           <Card className="contact__img">
             <CardMedia
               aspectRatio="square"
-              image={Kenna.src}
+              image={hike.image}
             />
           </Card>
           <Card className="contact__info">
             <div className="contact__info--body">
-              <h2>Kenna Cartright</h2>
-              <p><b><FontIcon>wb_sunny</FontIcon></b> 90 minute hike</p>
-              <p><b><FontIcon>directions_walk</FontIcon></b> Beginner level</p>
-              <p><b><FontIcon>tag_faces</FontIcon></b> Coolness 11/10</p>
+              <h2>{hike.name}</h2>
+              <p><b><FontIcon>wb_sunny</FontIcon></b> {hike.duration} minute hike</p>
+              <p><b><FontIcon>directions_walk</FontIcon></b> {hike.level} level</p>
+              <p><b><FontIcon>tag_faces</FontIcon></b> Coolness {hike.coolness}/10</p>
             </div>
           </Card>
         </div>
         <Card className="description">
-          <CardText>
-            Kenna Cartwright offers an extensive network of gentle nature trails for hiking or cycling with panoramic views of the city, the Thompson Valley, Kamloops Lake and the convergence of the North and South Thompson Rivers. This combined with our distinctive 4 seasons and easy access, makes Kenna Cartwright a park for all seasons.
-          </CardText>
+          <CardText>{hike.description}</CardText>
         </Card>
         <div className="buddies">
-          <Link to={`/buddy/1234`} >
-          <Card className="buddies__cards">
-            <CardTitle
-              className="buddies_cards--title"
-              avatar={NicImage.src}
-              title="Nick Riopel"
-              subtitle="Perilous Pathfinder" />
-            <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
-            </div>
-          </Card>
+        {buddies.map((buddy) => {
+          return (
+          <Link to={`/buddy/${buddy.id}`}>
+            <Card className="buddies__cards">
+              <CardTitle
+                className="buddies_cards--title"
+                avatar={buddy.img}
+                title={buddy.name}
+                subtitle={buddy.motto} />
+              <div className="buddies_cards--reviews">
+                {buddy.rating.map(() => {
+                  return <FontIcon>star</FontIcon>
+                })}
+              </div>
+            </Card>
           </Link>
-          <Card className="buddies__cards">
-            <CardTitle
-              className="buddies_cards--title"
-              avatar="http://www.thewanderguide.com/wp-content/uploads/2017/07/headshot.jpg"
-              title="Inga Tranvik"
-              subtitle="Bushwacker" />
-            <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
-            </div>
-          </Card>
-          <Card className="buddies__cards">
-            <CardTitle
-              className="buddies_cards--title"
-              avatar="http://eclipsemagazine.com/wp-content/uploads/2017/04/Ian-Hecox-headshot-photo-credit-Albert-L.-Ortega.jpg"
-              title="Justin Raker"
-              subtitle="Survivalist" />
-            <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
-            </div>
-          </Card>
-          <Card className="buddies__cards">
-            <CardTitle
-              className="buddies_cards--title"
-              avatar="https://i.pinimg.com/736x/68/be/1a/68be1a805e9206e375554f1f01e3b305--mens-headshots-model-headshots.jpg"
-              title="Jack Savage"
-              subtitle="Adventurer Extroardinaire" />
-            <div className="buddies_cards--reviews">
-              <FontIcon>star</FontIcon><FontIcon>star</FontIcon><FontIcon>star</FontIcon>
-            </div>
-          </Card>
+          )
+        })}
         </div>
         <style>{`
           .contact {
