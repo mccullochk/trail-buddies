@@ -6,7 +6,9 @@ import CardMedia from 'react-toolbox/lib/card/CardMedia'
 import CardText from 'react-toolbox/lib/card/CardText'
 import CardTitle from 'react-toolbox/lib/card/CardTitle'
 import FontIcon from 'react-toolbox/lib/font_icon/FontIcon'
-import Chip from 'react-toolbox/lib/chip/Chip'
+import Avatar from 'react-toolbox/lib/avatar/Avatar'
+
+import '../css/Buddy.css'
 
 class Buddies extends Component {
   render() {
@@ -16,12 +18,19 @@ class Buddies extends Component {
           <Card className="contact__img">
             <CardMedia 
               aspectRatio="square"
-              image="https://a0.muscache.com/im/pictures/1c0747c8-5c6f-48ef-ac71-1d2afdfc7446.jpg?aki_policy=xl_poster"
+              image="https://i.pinimg.com/736x/68/be/1a/68be1a805e9206e375554f1f01e3b305--mens-headshots-model-headshots.jpg"
             />
           </Card>
           <Card className="contact__info">
             <div className="contact__info--body">
-              <h2>John Doe</h2>
+              <h2>Jack Savage</h2>
+              <div className="reviews">
+                <FontIcon>star</FontIcon>
+                <FontIcon>star</FontIcon>
+                <FontIcon>star</FontIcon>
+                <FontIcon>star</FontIcon>
+                <p>3 Reviews</p>
+              </div>
               <p><b>$25.00</b> per person</p>
               <Button label="Book" raised primary className="book"/>
             </div>
@@ -29,64 +38,58 @@ class Buddies extends Component {
         </div>
         <Card className="description">
           <CardText>
+            <b>Who I am: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
+          </CardText>
+        </Card>
+        <Card className="description">
+          <CardText>
             <b>What I offer: </b>Head out towards the Kamloops airport along Tranquille Rd. Continue past the airport and golf course. When the road forks, head right over the train tracks. Follow that road until you reach the hairpin turn. Instead of following the road, head over the outer side of the corner on your left.
           </CardText>
         </Card> 
         <div className="reviews">
-          <Card className="review__cards">
-            <CardTitle subtitle='"Awesome Experience"'/>
+          <Card className="review__card">
+            <CardTitle
+              className="review__card--title"
+              avatar="https://www.journeybeyondtravel.com/wp-content/uploads/2017/07/Lucas-Peters-Headshot-Banasa-SMALL-300x288.jpg"
+              title="Billy"
+            />
+            <CardText>"Really knowledgable guide"</CardText>
+            <div className="stars">
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+            </div>
           </Card>
-          <Card className="review__cards">
-            <CardTitle subtitle='"Beautiful Hike"'/>
+          <Card className="review__card">
+            <CardTitle
+              className="review__card--title"
+              avatar="https://andrewskurka.korndev-cdn.com/wp-content/uploads/about-skurka-headshot.jpg"
+              title="Jordan"
+            />
+            <CardText>"Beautiful hike"</CardText>
+            <div className="stars">
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+            </div>
           </Card>
-          <Card className="review__cards">
-            <CardTitle subtitle='"So so.."'/>
+          <Card className="review__card">
+            <CardTitle
+              className="review__card--title"
+              avatar="http://wpmedia.theprovince.com/2011/12/davis_headshot1.jpg?quality=60&strip=all"
+              title="April"
+            />
+            <CardText>"So so.."</CardText>
+            <div className="stars">
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+              <FontIcon>star</FontIcon>
+            </div>
           </Card>
         </div>
-        <style>{`
-          .contact {
-            display: flex;
-            margin: 0 auto;
-            margin-bottom: 20px;
-          }
-          .contact .contact__img {
-            height: 150px;
-            width: calc((100%-20px)*0.5);
-          }
-          .contact .contact__info {
-            height: 150px;
-            width: calc((100%-20px)*0.5);
-          }
-          .contact__info--body {
-            margin-left: 10px;
-          }
-          .contact__info--body .book {
-            margin-left: 20px;
-          }
-          .description {
-            margin-bottom: 20px;
-          }
-          .reviews {
-            display: flex;
-            flex-wrap: wrap;
-          }
-          .review__cards {
-            width: 154px;
-            height: 100px;
-            margin-right: 5px;
-            margin-bottom: 10px;
-          }
-          .reviews .review__cards p {
-            font-size: 12px;
-          }
-          h2 {
-            margin: 10px 0 10px 0;
-          }
-          p {
-            margin: 0;
-            margin-bottom: 10px;
-          }
-        `}</style>
       </div>
     )
   }
